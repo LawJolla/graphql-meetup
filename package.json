@@ -1,0 +1,23 @@
+{
+  "name": "graphql-meetup",
+  "version": "1.0.0",
+  "description": "GraphQL Workshop for Tucson Webstackers Meetup",
+  "main": "lessons/00-index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "start02": "nodemon lessons/02-mutations.js",
+    "start03": "nodemon lessons/03-chat-scaffold.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Dennis Walsh",
+  "license": "ISC",
+  "dependencies": {
+    "apollo-server": "^2.0.4",
+    "apollo-server-express": "^2.0.3",
+    "graphql": "^0.13.2",
+    "nodemon": "^1.18.3"
+  },
+  "devDependencies": {
+    "prettier": "^1.14.2"
+  }
+}
