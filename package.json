@@ -7,15 +7,17 @@
     "start": "nodemon index.js",
     "start02": "nodemon lessons/02-mutations.js",
     "start03": "nodemon lessons/03-chat-scaffold.js",
+    "start04": "nodemon lessons/04-prisma.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Dennis Walsh",
   "license": "ISC",
   "dependencies": {
-    "apollo-server": "^2.0.4",
+    "apollo-server": "^2.0.6",
     "apollo-server-express": "^2.0.3",
     "graphql": "^0.13.2",
-    "nodemon": "^1.18.3"
+    "nodemon": "^1.18.3",
+    "prisma-binding": "^2.1.5"
   },
   "devDependencies": {
     "prettier": "^1.14.2"

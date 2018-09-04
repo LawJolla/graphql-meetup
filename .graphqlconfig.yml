@@ -1,0 +1,6 @@
+projects:
+  prisma:
+    schemaPath: lessons/prisma.graphql
+    extensions:
+      endpoints:
+        dev: https://www.wkimgs.com/meetup
