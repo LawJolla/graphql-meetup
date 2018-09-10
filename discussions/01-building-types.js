@@ -4,36 +4,19 @@ const { ApolloServer, gql } = require("apollo-server");
 const typeDefs = gql`
   type Query {
     "A simple type for getting started!"
-    hello: Hello
-    goodbye: String
+    hello: String
+    # goodbye with String
   }
 
-  type Mutation {
-    changeGreeting(newGreeting: String): Hello
-  }
-
-  type Hello {
-    id: ID
-    greeting: String
-  }
+  #  build hello type with id and greeting
 `;
-
-const Hello = {
-  id: "12",
-  greeting: "👋"
-};
 
 // A map of functions which return data for the schema.
 const resolvers = {
   Query: {
-    hello: () => Hello,
-    goodbye: () => "✌️"
-  },
-  Mutation: {
-    changeGreeting: (parent, args, context, info) => {
-      Hello.greeting = args.newGreeting;
-      return Hello;
-    }
+    // add hello type to hello query
+    hello: () => "👋"
+    // add goodbye resolver
   }
 };
 

@@ -1,6 +1,14 @@
 projects:
   prisma:
-    schemaPath: lessons/prisma.graphql
+    schemaPath: generated/prisma.graphql
     extensions:
       endpoints:
         dev: https://www.wkimgs.com/meetup
+  github:
+    schemaPath: generated/github.graphql
+    extensions:
+      endpoints:
+        dev:
+          url: "https://api.github.com/graphql"
+          headers:
+            Authorization: "Bearer bab35fd0de6f961034d536ee97e85696bdd1a3a2"
