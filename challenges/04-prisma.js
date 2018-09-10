@@ -1,6 +1,6 @@
 const { ApolloServer, gql } = require("apollo-server");
 const { Prisma, extractFragmentReplacements } = require("prisma-binding");
-require("dotenv").require();
+require("dotenv").config();
 // The GraphQL schema
 
 const typeDefs = gql`

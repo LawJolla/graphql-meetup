@@ -10,7 +10,7 @@ const {
   makeExecutableSchema
 } = require(`graphql-tools`);
 const fs = require(`fs`);
-require("dotenv").require();
+require("dotenv").config();
 // The GraphQL schema
 
 const typeDefs = gql`

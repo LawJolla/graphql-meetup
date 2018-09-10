@@ -64,6 +64,7 @@ const resolvers = {
     createUser: async (_, { githubLogin }, { github, db }, info) => {
       // check for duplicate
       const user = await db.query.user({ where: { githubLogin } }, info);
+      console.log("user", user);
       if (user) return user;
 
       const { avatarUrl: avatar, name } = await github.query.user(

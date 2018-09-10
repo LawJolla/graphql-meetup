@@ -11,4 +11,4 @@ projects:
         dev:
           url: "https://api.github.com/graphql"
           headers:
-            Authorization: "Bearer bab35fd0de6f961034d536ee97e85696bdd1a3a2"
+            Authorization: "Bearer ${env:GITHUB_TOKEN}"
